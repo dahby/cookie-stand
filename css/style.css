@@ -1,0 +1,20 @@
+* {
+  background-color: #FFADBF;
+  align-content: stretch;
+}
+
+#oddThings {
+  font-size: 50px;
+  color: #5699B2;
+}
+
+.nav {
+  font-size: 40px;
+  display: inline;
+  padding: 10px;
+  align-content: center;
+}
+
+/* li {
+  display: inline;
+} */
