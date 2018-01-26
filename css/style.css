@@ -1,19 +1,71 @@
 * {
   background-color: #FFADBF;
-  align-content: stretch;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: darkgreen;
+  margin: auto;
 }
 
-#oddThings {
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+table, td, tr {
+  border: 1px solid #B2566A;
+  padding: 5px;
+  font-family: arial, verdana, helvetica;
+  background-color: #ECF2C9;
+  color: #B2566A;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.pageLabel {
   font-size: 50px;
   color: #5699B2;
+  list-style: none;
+  margin: 70px;
+}
+
+#frontPage {
+  font-size: 30px;
+  width: 700px;
+  }
+
+ol {
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  margin: 30px;
 }
 
 .nav {
   font-size: 40px;
   display: inline;
-  padding: 10px;
-  align-content: center;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 50px 0px 50px;
+  vertical-align: bottom;
+  /* margin: 5px, 100px, 5px, 100px; */
+  /* padding: 5px, 50px, 5px, 50px; */
+  /* align-content: center; */
+  /* margin: auto; */
 }
+
+/* img.salmBreak1 {
+  width: 8px;
+  height: 5px;
+}
+
+.salmBreak2 {
+  width: 8px;
+  height: 5px;
+  transform: scaleX(-1);
+} */
 
 /* li {
   display: inline;
