@@ -1,14 +1,48 @@
 'use strict';
+// Creat an array of open store hours
+var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
+// First and Pike Location
 var pike = {
   name: '1st and Pike',
-  minCust: 23,
-  maxCust: 65,
-  avgSale: 6.3,
-  random: function() {
-    return Math.floor(Math.random(pike.minCust, pike.maxCust) * (pike.maxCust - pike.minCust)) + pike.minCust;
+  minCustHr: 23,
+  maxCustHr: 65,
+  avgSalePerCust: 6.3,
+  randCustHr: [],
+  cookiesHr: [],
+  totalCookies: 0,
+  // method for random customers by hour
+  calcRandCustHr: function() {
+    for(var i = 0; i < hours.length; i++) {
+      this.randCustHr.push(Math.floor(Math.random() * (pike.maxCustHr - pike.minCustHr + 1)) + pike.minCustHr);
+    console.log(this.randCustHr[i]);
+    }
+  },
+  // method for cookies sold by hour
+  calcCookiesHr: function() {
+    for (var j=0; j < hours.length; j++) {
+      this.cookiesHr.push(Math.round(this.avgSalePerCust * this.randCustHr[j]));
+    console.log(this.cookiesHr[j]);
+    }
+  },
+  // render function into lists
+  render: function () {
+    var pike = document.getElementById('pike');
+    var pikeList = document.getElementById('pikeList');
+    this.calcRandCustHr();
+    this.calcCookiesHr();
+    var h3El = document.createElement('h3');
+    h3El.textContent = this.name;
+    pike.appendChild(h3El);
+    for (var k = 0; k < hours.length; k++) {
+      var liEl = document.createElement('li');
+      liEl.textContent = hours[k] + ': ' + this.cookiesHr[k] + ' cookies';
+    console.log(liEl);
+    pikeList.appendChild(liEl);
+    }
   }
-}
+};
+pike.render();
 
 var seatac = {
   name: 'SeaTac Airport',
