@@ -10,7 +10,22 @@ body {
 }
 
 h1 {
+  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 75px;
+  color: #4053F2;
+}
+
+h4 {
+  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  color: #4053F2;
+}
+
+em {
+  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 125%;
+  color: #4053F2;
 }
 
 table, td, tr {
@@ -18,9 +33,13 @@ table, td, tr {
   padding: 5px;
   font-family: arial, verdana, helvetica;
   background-color: #ECF2C9;
-  color: #B2566A;
+  color: rgb(126, 40, 59);
   margin: auto;
   margin-bottom: 100px;
+}
+
+p {
+  margin-bottom: 50px;
 }
 
 .pageLabel {
@@ -30,9 +49,10 @@ table, td, tr {
   margin: 70px;
 }
 
-#frontPage {
+.frontPage {
   font-size: 30px;
-  width: 700px;
+  width: 775px;
+  padding: 20px;
   }
 
 ol {
@@ -50,23 +70,4 @@ li {
   margin: 20px 0px 20px 0px;
   padding: 0px 50px 0px 50px;
   vertical-align: bottom;
-  /* margin: 5px, 100px, 5px, 100px; */
-  /* padding: 5px, 50px, 5px, 50px; */
-  /* align-content: center; */
-  /* margin: auto; */
 }
-
-/* img.salmBreak1 {
-  width: 8px;
-  height: 5px;
-}
-
-.salmBreak2 {
-  width: 8px;
-  height: 5px;
-  transform: scaleX(-1);
-} */
-
-/* li {
-  display: inline;
-} */
