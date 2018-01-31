@@ -44,11 +44,13 @@ function makeStores() {
 makeStores();
 console.log(allLocations)
 
-var pike = allLocations[0];
-var seatac = allLocations[1];
-var seaCent = allLocations[2];
-var capHill = allLocations[3];
-var alki = allLocations[4];
+// var pike = allLocations[0];
+// var seatac = allLocations[1];
+// var seaCent = allLocations[2];
+// var capHill = allLocations[3];
+// var alki = allLocations[4];
+
+//creating functions for table population
 
 var cookieStands = document.getElementById("cookieStands");
 
@@ -67,3 +69,22 @@ function makeHeaderRow() {
   cookieStands.appendChild(trEl);
 }
 makeHeaderRow()
+
+for (var j = 0; j < allLocations.length; j++) {
+  function makeTableRow() {
+    var trEl = document.createElement("tr");
+    var tdEl = document.createElement("td");
+    tdEl.textContent = allLocations[j].name;
+    trEl.appendChild(tdEl);
+    for (var k = 0; k < hours.length; k++) {
+      tdEl = document.createElement("td");
+      tdEl.textContent = allLocations[j].cookiesHr[k];
+      trEl.appendChild(tdEl);
+    }
+    tdEl = document.createElement("td");
+    tdEl.textContent = allLocations[j].totalCookies;
+    trEl.appendChild(tdEl);
+    cookieStands.appendChild(trEl);
+  }
+  makeTableRow();
+}
