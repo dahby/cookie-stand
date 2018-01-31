@@ -37,8 +37,8 @@ var pike = {
     for (var k = 0; k < hours.length; k++) {
       var liEl = document.createElement('li');
       liEl.textContent = hours[k] + ': ' + this.cookiesHr[k] + ' cookies';
-    console.log(liEl);
-    pikeList.appendChild(liEl);
+      // console.log(liEl);
+      pikeList.appendChild(liEl);
     }
   }
 };
@@ -59,14 +59,14 @@ var seatac = {
     // console.log(this.randCustHr[i]);
     }
   },
-  
+
   calcCookiesHr: function() {
     for (var j=0; j < hours.length; j++) {
       this.cookiesHr.push(Math.round(this.avgSalePerCust * this.randCustHr[j]));
     // console.log(this.cookiesHr[j]);
     }
   },
-  
+
   render: function () {
     var seatac = document.getElementById('seatac');
     var seatacList = document.getElementById('seatacList');
@@ -78,8 +78,8 @@ var seatac = {
     for (var k = 0; k < hours.length; k++) {
       var liEl = document.createElement('li');
       liEl.textContent = hours[k] + ': ' + this.cookiesHr[k] + ' cookies';
-    console.log(liEl);
-    seatacList.appendChild(liEl);
+      // console.log(liEl);
+      seatacList.appendChild(liEl);
     }
   }
 };
@@ -100,14 +100,14 @@ var seaCenter = {
     // console.log(this.randCustHr[i]);
     }
   },
-  
+
   calcCookiesHr: function() {
     for (var j=0; j < hours.length; j++) {
       this.cookiesHr.push(Math.round(this.avgSalePerCust * this.randCustHr[j]));
     // console.log(this.cookiesHr[j]);
     }
   },
-  
+
   render: function () {
     var seaCenter = document.getElementById('seaCenter');
     var seaCenterList = document.getElementById('seaCenterList');
@@ -119,8 +119,8 @@ var seaCenter = {
     for (var k = 0; k < hours.length; k++) {
       var liEl = document.createElement('li');
       liEl.textContent = hours[k] + ': ' + this.cookiesHr[k] + ' cookies';
-    console.log(liEl);
-    seaCenterList.appendChild(liEl);
+      // console.log(liEl);
+      seaCenterList.appendChild(liEl);
     }
   }
 };
@@ -141,14 +141,14 @@ var capHill = {
     // console.log(this.randCustHr[i]);
     }
   },
-  
+
   calcCookiesHr: function() {
     for (var j=0; j < hours.length; j++) {
       this.cookiesHr.push(Math.round(this.avgSalePerCust * this.randCustHr[j]));
     // console.log(this.cookiesHr[j]);
     }
   },
-  
+
   render: function () {
     var capHill = document.getElementById('capHill');
     var capHillList = document.getElementById('capHillList');
@@ -160,8 +160,8 @@ var capHill = {
     for (var k = 0; k < hours.length; k++) {
       var liEl = document.createElement('li');
       liEl.textContent = hours[k] + ': ' + this.cookiesHr[k] + ' cookies';
-    console.log(liEl);
-    capHillList.appendChild(liEl);
+      // console.log(liEl);
+      capHillList.appendChild(liEl);
     }
   }
 };
@@ -182,14 +182,14 @@ var alki = {
     // console.log(this.randCustHr[i]);
     }
   },
-  
+
   calcCookiesHr: function() {
     for (var j=0; j < hours.length; j++) {
       this.cookiesHr.push(Math.round(this.avgSalePerCust * this.randCustHr[j]));
     // console.log(this.cookiesHr[j]);
     }
   },
-  
+
   render: function () {
     var alki = document.getElementById('alki');
     var alkiList = document.getElementById('alkiList');
@@ -201,8 +201,8 @@ var alki = {
     for (var k = 0; k < hours.length; k++) {
       var liEl = document.createElement('li');
       liEl.textContent = hours[k] + ': ' + this.cookiesHr[k] + ' cookies';
-    // console.log(liEl);
-    alkiList.appendChild(liEl);
+      // console.log(liEl);
+      alkiList.appendChild(liEl);
     }
   }
 };
