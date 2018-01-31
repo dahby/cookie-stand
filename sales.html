@@ -8,6 +8,20 @@
   </head>
 
   <body>
+    <form id = 'newStore'>
+      <fieldset>
+        <legend>Add New Store Location</legend>
+        <label for = 'storeName'>Name of Location: </label>
+        <input name = 'storeName' type = 'text' />
+        <label for = 'minCust'>Minimum Customers Per Hour: </label>
+        <input name = 'minCust' type = 'text' />
+        <label for = 'maxCust'>Maximum Customers Per Hour: </label>
+        <input name = 'maxCust' type = 'text' />
+        <label for = 'avgSalePerCust'>Average Cookies Sold Per Customer: </label>
+        <input name = 'avgSalePerCust' type = 'text' />
+        <button type = 'submit'>Create New Store!</button>
+      </fieldset>
+    </form>
     <h1>Sales Tables for Pat's Salmon Cookies</h1>
     <table id="cookieStands"></table>
     

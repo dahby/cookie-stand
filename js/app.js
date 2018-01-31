@@ -3,7 +3,7 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var allLocations = [];
 // var totalCookiesHr = 0;
-var netTotal = 0;
+// var netTotal = 0;
 
 function MakeLocation(name, minCustHr, maxCustHr, avgSalePerCust) {
   this.name = name;
@@ -13,12 +13,12 @@ function MakeLocation(name, minCustHr, maxCustHr, avgSalePerCust) {
   this.randCustHr = [];
   this.cookiesHr = [];
   this.totalCookies = 0;
-  allLocations.push(this);  
+  allLocations.push(this);
 
   this.calcRandCustHr = function() {
     for(var i = 0; i < hours.length; i++) {
       this.randCustHr.push(Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr);
-      console.log(this.randCustHr[i]);
+      // console.log(this.randCustHr[i]);
     }
   };
   this.calcRandCustHr();
@@ -26,7 +26,7 @@ function MakeLocation(name, minCustHr, maxCustHr, avgSalePerCust) {
   this.calcCookiesHr = function() {
     for (var j=0; j < hours.length; j++) {
       this.cookiesHr.push(Math.round(this.avgSalePerCust * this.randCustHr[j]));
-      console.log(this.cookiesHr[j]);
+      // console.log(this.cookiesHr[j]);
       this.totalCookies += this.cookiesHr[j];
     }
   };
@@ -42,7 +42,7 @@ function makeStores() {
 }
 
 makeStores();
-console.log(allLocations);
+// console.log(allLocations);
 
 // var pike = allLocations[0];
 // var seatac = allLocations[1];
