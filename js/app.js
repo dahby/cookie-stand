@@ -3,7 +3,7 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var allLocations = [];
 // var totalCookiesHr = 0;
-// var netTotal = 0;
+var netTotal = 0;
 
 function MakeLocation(name, minCustHr, maxCustHr, avgSalePerCust) {
   this.name = name;
@@ -91,9 +91,24 @@ makeTableRow();
 
 function makeFooterRow() {
   var trEl = document.createElement('tr');
-  var tdEl = document.createElement('td');
-  tdEl.textContent = 'Totals';
-  trEl.appendChild(tdEl);
+  var rowEl = document.createElement('td');
+  rowEl.textContent = 'Net Totals';
+  trEl.appendChild(rowEl);
+  var tdEl = [];
+  var total = 0;
+  for (var i = 0; i < hours.length; i++) {
+    tdEl[i] = document.createElement('td');
+    for (var j = 0; j < allLocations.length; j++) {
+      total += allLocations[j].cookiesHr[i];
+    }
+    tdEl[i].textContent = total;
+    netTotal += total;
+    total = 0;
+    trEl.appendChild(tdEl[i]);
+  }
+  var allTotals = document.createElement('td');
+  allTotals.textContent = netTotal;
   cookieStands.appendChild(trEl);
+  trEl.appendChild(allTotals);
 }
 makeFooterRow();
