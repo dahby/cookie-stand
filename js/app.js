@@ -112,3 +112,25 @@ function makeFooterRow() {
   trEl.appendChild(allTotals);
 }
 makeFooterRow();
+
+var newStore = document.getElementById('newStore');
+
+function handleLocationAdd(event) {
+  event.preventDefault();
+  if(!event.target.storeName.value || !event.target.minCust.value || !event.target.maxCust.value || !event.target.avgSalePerCust.value) {
+    return alert('Insufficient data to add new store location');
+  }
+  var newName = event.target.storeName.value;
+  var newMinCustHr = parseInt(event.target.minCust.value);
+  var newMaxCustHr = parseInt(event.target.maxCust.value);
+  var newAvgSalePerCust = parseInt(event.target.avgSalePerCust.value);
+
+  new MakeLocation(newName, newMinCustHr, newMaxCustHr, newAvgSalePerCust);
+
+  event.target.storeName.value = null;
+  event.target.minCust.value = null;
+  event.target.maxCust.value = null;
+  event.target.avgSalePerCust.value = null;
+}
+
+newStore.addEventListener('submit', handleLocationAdd);
