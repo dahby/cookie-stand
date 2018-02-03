@@ -41,16 +41,8 @@ function makeStores() {
   new MakeLocation('Alki', 2, 16, 4.6);
 }
 
-makeStores();
+// makeStores();
 // console.log(allLocations);
-
-// var pike = allLocations[0];
-// var seatac = allLocations[1];
-// var seaCent = allLocations[2];
-// var capHill = allLocations[3];
-// var alki = allLocations[4];
-
-//creating functions for table population
 
 var cookieStands = document.getElementById('cookieStands');
 
@@ -68,7 +60,7 @@ function makeHeaderRow() {
   trEl.appendChild(thEl);
   cookieStands.appendChild(trEl);
 }
-makeHeaderRow();
+// makeHeaderRow();
 
 function makeTableRow() {
   for (var j = 0; j < allLocations.length; j++) {
@@ -87,7 +79,7 @@ function makeTableRow() {
     cookieStands.appendChild(trEl);
   }
 }
-makeTableRow();
+// makeTableRow();
 
 function makeFooterRow() {
   var trEl = document.createElement('tr');
@@ -111,7 +103,7 @@ function makeFooterRow() {
   cookieStands.appendChild(trEl);
   trEl.appendChild(allTotals);
 }
-makeFooterRow();
+// makeFooterRow();
 
 var newStore = document.getElementById('newStore');
 
@@ -126,6 +118,7 @@ function handleLocationAdd(event) {
   var newAvgSalePerCust = parseInt(event.target.avgSalePerCust.value);
 
   new MakeLocation(newName, newMinCustHr, newMaxCustHr, newAvgSalePerCust);
+  makeTableRow();
 
   event.target.storeName.value = null;
   event.target.minCust.value = null;
@@ -134,3 +127,12 @@ function handleLocationAdd(event) {
 }
 
 newStore.addEventListener('submit', handleLocationAdd);
+
+function generateTable() {
+  makeStores();
+  makeHeaderRow();
+  makeTableRow();
+  makeFooterRow();
+}
+
+generateTable();
