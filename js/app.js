@@ -2,7 +2,6 @@
 // Creat an array of open store hours
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var allLocations = [];
-// var totalCookiesHr = 0;
 var netTotal = 0;
 
 function MakeLocation(name, minCustHr, maxCustHr, avgSalePerCust) {
@@ -41,7 +40,7 @@ function makeStores() {
   new MakeLocation('Alki', 2, 16, 4.6);
 }
 
-// makeStores();
+makeStores();
 // console.log(allLocations);
 
 var cookieStands = document.getElementById('cookieStands');
@@ -60,7 +59,7 @@ function makeHeaderRow() {
   trEl.appendChild(thEl);
   cookieStands.appendChild(trEl);
 }
-// makeHeaderRow();
+makeHeaderRow();
 
 function makeTableRow() {
   for (var j = 0; j < allLocations.length; j++) {
@@ -79,7 +78,7 @@ function makeTableRow() {
     cookieStands.appendChild(trEl);
   }
 }
-// makeTableRow();
+makeTableRow();
 
 function makeFooterRow() {
   var trEl = document.createElement('tr');
@@ -103,7 +102,7 @@ function makeFooterRow() {
   cookieStands.appendChild(trEl);
   trEl.appendChild(allTotals);
 }
-// makeFooterRow();
+makeFooterRow();
 
 var newStore = document.getElementById('newStore');
 
@@ -118,7 +117,13 @@ function handleLocationAdd(event) {
   var newAvgSalePerCust = parseInt(event.target.avgSalePerCust.value);
 
   new MakeLocation(newName, newMinCustHr, newMaxCustHr, newAvgSalePerCust);
-  makeTableRow();
+
+  for(var i = cookieStands.rows.length; i > 0; i--) {
+    cookieStands.deleteRow(i-1);
+  }
+  makeHeaderRow(cookieStands);
+  makeTableRow(cookieStands);
+  makeFooterRow(cookieStands);
 
   event.target.storeName.value = null;
   event.target.minCust.value = null;
@@ -127,12 +132,3 @@ function handleLocationAdd(event) {
 }
 
 newStore.addEventListener('submit', handleLocationAdd);
-
-function generateTable() {
-  makeStores();
-  makeHeaderRow();
-  makeTableRow();
-  makeFooterRow();
-}
-
-generateTable();
