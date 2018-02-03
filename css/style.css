@@ -65,14 +65,14 @@ a:hover {
 }
 
 .pageLabel {
-  height: 200px;
-  margin-bottom: 250px;
+  height: 400px;
+  /* margin-bottom: 250px; */
 }
 
 .pageLabel h1 {
   float: left;
   font-size: 50px;
-  margin: 175px 50px 100px 125px;
+  margin: 150px 50px 130px 125px;
   font-family: 'Risque';
 }
 
@@ -83,8 +83,22 @@ a:hover {
 
 .pageLabel ol li {
   font-size: 35px;
-  margin-top: 50px;
+  margin-top: 25px;
   /* text-align: center; */
+}
+
+.contactLabel {
+  /* padding: 500px; */
+  /* margin: 100px; */
+}
+
+.contactLabel tr td {
+  font-size: 35px;
+  padding: 10px;
+  /* margin-top: 100px; */
+  border: 10px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .frontPage {
@@ -98,7 +112,14 @@ a:hover {
 }
 
 .frontPage p {
-  margin: 15px 70px;
+  margin: 15px 50px;
+}
+
+.frontPage img {
+  height: 175px;
+  width: 250px;
+  float: left;
+  margin-left: 50px;
 }
 
 footer {
@@ -108,69 +129,3 @@ footer {
   font-family: 'Risque';
   font-size: 30px;
 }
-/* body {
-  text-align: center;
-}
-
-h1 {
-  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 75px;
-  color: #4053F2;
-}
-
-h4 {
-  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  padding: 15px;
-  color: #4053F2;
-}
-
-em {
-  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 125%;
-  color: #4053F2;
-}
-
-table, td, tr {
-  border: 1px solid #B2566A;
-  padding: 5px;
-  font-family: arial, verdana, helvetica;
-  background-color: #ECF2C9;
-  color: rgb(126, 40, 59);
-  margin: auto;
-  margin-bottom: 100px;
-}
-
-p {
-  margin-bottom: 50px;
-}
-
-.pageLabel {
-  font-size: 50px;
-  color: #5699B2;
-  list-style: none;
-  margin: 70px;
-}
-
-.frontPage {
-  font-size: 30px;
-  width: 775px;
-  padding: 20px;
-  }
-
-ol {
-  margin: auto;
-}
-
-li {
-  list-style: none;
-  margin: 30px;
-} */
-/* 
-.nav {
-  font-size: 40px;
-  display: inline;
-  margin: 20px 0px 20px 0px;
-  padding: 0px 50px 0px 50px;
-  vertical-align: bottom;
-} */
