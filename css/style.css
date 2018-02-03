@@ -1,9 +1,9 @@
-* {
+/* * { */
   /* background-color: #FFADBF; */
   /* font-family: Georgia, 'Times New Roman', Times, serif;
   color: darkgreen; */
   /* margin: auto; */
-}
+/* } */
 
 header {
   height: 250px;
@@ -19,6 +19,7 @@ header {
 
 nav {
   background-color: #FFADBF;
+  height: 175px;
   /* font-size: 40px;
   display: inline-block;
   margin: 20px 0px 20px 0px;
@@ -34,7 +35,7 @@ nav img {
 nav div {
   float: left;
   margin: 25px 75px;
-  height: 200px;
+  height: 100px;
   width: 200px;
   font-family: 'Risque';
   text-align: center;
@@ -47,7 +48,7 @@ nav div h1 {
 }
 
 nav ul li {
-  margin: 60px auto;
+  margin-top: 70px;
   margin-left: 30px;
   display: inline-block;
   font-size: 40px;
@@ -56,8 +57,57 @@ nav ul li {
 a {
   text-decoration: none;
   color: #4053F2;
+  transition: 300ms;
 }
 
+a:hover {
+  color: yellow;
+}
+
+.pageLabel {
+  height: 200px;
+  margin-bottom: 250px;
+}
+
+.pageLabel h1 {
+  float: left;
+  font-size: 50px;
+  margin: 175px 50px 100px 125px;
+  font-family: 'Risque';
+}
+
+.pageLabel img {
+  height: 100px;
+  width: 100px;
+}
+
+.pageLabel ol li {
+  font-size: 35px;
+  margin-top: 50px;
+  /* text-align: center; */
+}
+
+.frontPage {
+  /* margin-bottom: 10px; */
+  height: 150px;
+  background-color: #FFADBF;
+  color: #4053F2;
+  padding: 30px 60px 50px 60px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.frontPage p {
+  margin: 15px 70px;
+}
+
+footer {
+  background-color: #4053F2;
+  height: 60px;
+  text-align: right;
+  font-family: 'Risque';
+  font-size: 30px;
+}
 /* body {
   text-align: center;
 }
