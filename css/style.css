@@ -1,11 +1,64 @@
 * {
-  background-color: #FFADBF;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: darkgreen;
-  margin: auto;
+  /* background-color: #FFADBF; */
+  /* font-family: Georgia, 'Times New Roman', Times, serif;
+  color: darkgreen; */
+  /* margin: auto; */
 }
 
-body {
+header {
+  height: 250px;
+}
+
+#top-panel {
+  background-color: #4053F2;
+  height: 80px;
+  text-align: center;
+  font-family: 'Risque';
+  font-size: 70px;
+}
+
+nav {
+  background-color: #FFADBF;
+  /* font-size: 40px;
+  display: inline-block;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 50px 0px 50px;
+  vertical-align: bottom; */
+}
+
+nav img {
+  height: 100px;
+  width: 200px;
+}
+
+nav div {
+  float: left;
+  margin: 25px 75px;
+  height: 200px;
+  width: 200px;
+  font-family: 'Risque';
+  text-align: center;
+  color: #4053F2;
+  /* font-size: 25px; */
+}
+
+nav div h1 {
+  font-size: 25px;
+}
+
+nav ul li {
+  margin: 60px auto;
+  margin-left: 30px;
+  display: inline-block;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #4053F2;
+}
+
+/* body {
   text-align: center;
 }
 
@@ -62,12 +115,12 @@ ol {
 li {
   list-style: none;
   margin: 30px;
-}
-
+} */
+/* 
 .nav {
   font-size: 40px;
   display: inline;
   margin: 20px 0px 20px 0px;
   padding: 0px 50px 0px 50px;
   vertical-align: bottom;
-}
+} */
