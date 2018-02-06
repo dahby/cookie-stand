@@ -121,6 +121,7 @@ function handleLocationAdd(event) {
   for(var i = cookieStands.rows.length; i > 0; i--) {
     cookieStands.deleteRow(i-1);
   }
+  netTotal = 0;
   makeHeaderRow(cookieStands);
   makeTableRow(cookieStands);
   makeFooterRow(cookieStands);
