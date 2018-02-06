@@ -1,73 +1,128 @@
-* {
-  background-color: #FFADBF;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: darkgreen;
-  margin: auto;
+header {
+  height: 250px;
 }
 
-body {
+#top-panel {
+  background-color: #4053F2;
+  height: 80px;
   text-align: center;
+  font-family: 'Risque';
+  font-size: 70px;
 }
 
-h1 {
-  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 75px;
+nav {
+  background-color: #FFADBF;
+  height: 175px;
+}
+
+nav img {
+  height: 100px;
+  width: 200px;
+}
+
+nav div {
+  float: left;
+  margin: 25px 75px;
+  height: 100px;
+  width: 200px;
+  font-family: 'Risque';
+  text-align: center;
   color: #4053F2;
 }
 
-h4 {
-  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  padding: 15px;
+nav div h1 {
+  font-size: 25px;
+}
+
+nav ul li {
+  margin-top: 70px;
+  margin-left: 30px;
+  display: inline-block;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
   color: #4053F2;
+  transition: 300ms;
 }
 
-em {
-  font-family: 'Risque', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 125%;
-  color: #4053F2;
-}
-
-table, td, tr {
-  border: 1px solid #B2566A;
-  padding: 5px;
-  font-family: arial, verdana, helvetica;
-  background-color: #ECF2C9;
-  color: rgb(126, 40, 59);
-  margin: auto;
-  margin-bottom: 100px;
-}
-
-p {
-  margin-bottom: 50px;
+a:hover {
+  color: yellow;
 }
 
 .pageLabel {
+  height: 350px;
+}
+
+.pageLabel h1 {
+  float: left;
   font-size: 50px;
-  color: #5699B2;
-  list-style: none;
-  margin: 70px;
+  margin: 150px 50px 150px 125px;
+  font-family: 'Risque';
 }
 
-.frontPage {
+.pageLabel img {
+  height: 100px;
+  width: 100px;
+}
+
+.pageLabel ol li {
+  font-size: 35px;
+  margin-top: 5px;
+}
+
+.pageLabel p {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+#shirt img{
+  height: 250px;
+  width: 200px;
+  margin-left: 125px;
+}
+
+.contactLabel tr td {
+  font-size: 35px;
+  padding: 10px;
+  border: 10px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.locateLabel tr td {
+  font-size: 25px;
+  padding: 10px;
+  border: 10px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottomContent {
+  height: 150px;
+  background-color: #FFADBF;
+  color: #4053F2;
+  padding: 30px 60px 50px 60px;
+  text-align: center;
   font-size: 30px;
-  width: 775px;
-  padding: 20px;
-  }
-
-ol {
-  margin: auto;
 }
 
-li {
-  list-style: none;
-  margin: 30px;
+.bottomContent p {
+  margin: 15px 50px;
 }
 
-.nav {
-  font-size: 40px;
-  display: inline;
-  margin: 20px 0px 20px 0px;
-  padding: 0px 50px 0px 50px;
-  vertical-align: bottom;
+.bottomContent img {
+  height: 175px;
+  width: 250px;
+  float: left;
+  margin-left: 50px;
+}
+
+footer {
+  background-color: #4053F2;
+  height: 60px;
+  text-align: right;
+  font-family: 'Risque';
+  font-size: 30px;
 }

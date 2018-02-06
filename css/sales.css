@@ -1,3 +1,61 @@
-table, td, tr, th {
+header {
+  height: 160px;
+  background-color: #FFADBF;
+  text-align: center;
+  font-family: 'Risque';
+  font-size: 70px;
+}
+
+#top-panel {
+  background-color: #4053F2;
+  height: 80px;
+}
+
+fieldset {
   border: 1px solid black;
+  font-size: 15px;
+  width: 900px;
+  height: 200px;
+  margin: auto;
+}
+
+fieldset legend {
+  font-size: 25px;
+  text-align: center;
+}
+
+table, td, tr, th {
+  font-size: 15px;
+  padding: 5px;
+  margin: auto;
+  border: 5px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottomContent {
+  height: 10px;
+  background-color: #FFADBF;
+  color: #4053F2;
+  padding: 30px 60px 50px 60px;
+  text-align: center;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #4053F2;
+  transition: 300ms;
+}
+
+a:hover {
+  color: yellow;
+}
+
+footer {
+  background-color: #4053F2;
+  height: 80px;
+  text-align: right;
+  font-family: 'Risque';
+  font-size: 30px;
 }
